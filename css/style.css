@@ -140,8 +140,8 @@ input, select {
 
 img {
   object-fit: cover;
-  max-width: 100%;
-  height: auto;
+  width:100%;
+  height:auto;
 
 
 }
@@ -181,6 +181,7 @@ img {
   .col-12 {width: 100%;}
 .flex-container{
    display: flex;
+   flex-direction: row;
 }
 
 /*#gallery {
