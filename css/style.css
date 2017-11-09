@@ -130,7 +130,7 @@ input, select {
 }
 
 .gallery {
-  margin: 0px;
+  /*margin: 0px;*/
   border: 1px solid #ccc;
   display: inline-block;
   width: 100%;
@@ -181,7 +181,17 @@ img {
   .col-12 {width: 100%;}
 .flex-container{
    display: flex;
-   flex-direction: row;
+
+   flex-direction:row;
+
+}
+.flex-container2{
+  display:flex;
+  height: 200px;
+  flex-direction:row;
+  align-content:flex-start;
+  flex-wrap: nowrap;
+}
 }
 
 /*#gallery {
