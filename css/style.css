@@ -96,6 +96,7 @@ input, select {
   border: 1px solid #ccc;
   border-radius: 10px;
   font-weight: bold;
+  min-width: 75px;
 }
 
 #book {
@@ -221,16 +222,24 @@ img {
 .flex-container {
   display: flex;
   flex-direction: row;
+  /*flex-wrap: wrap;*/
 }
+@media only screen and (max-width:500px) {
+  .flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}}
 
 .flex-container2 {
   display: flex;
   height: 200px;
+  flex-direction: row;
   /*flex-direction:column;
   align-content:flex-end;*/
   /*flex-wrap:wrap-reverse;*/
   /*justify-content: space-around;*/
-  flex-wrap: wrap;
+
   align-content: stretch;
 }
 

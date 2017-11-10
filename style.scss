@@ -1,0 +1,54 @@
+$width: 100%;
+$border:1px solid #ccc;
+$backgroundcolor:#ED081D;
+@mixin backgroundproperties{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/food1.jpg");
+}
+@mixin boxmodel{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul{
+  list-style-type: none;
+  height: 100px;
+  background: $backgroundcolor;
+  @include boxmodel;
+  li{
+    float: center;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-left: 200px;
+  }
+  a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    float: right;
+  }
+}
+img{
+  object-fit: cover;
+  width:$width;
+  height: auto;
+}
+.gallery{
+  width:$width;
+  display: inline-block;
+  border:$border;
+}
+.food{
+  @include backgroundproperties;
+  width:$width;
+  height: 500px;
+  border-radius: 10px;
+  text-align: center;
+  transition: width 5s, height 5s, transform 5s;
+}
+@import "grid";
